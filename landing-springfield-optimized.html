@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no">
+  <title>24/7 Garage Door Repair & Installation | Springfield, MA</title>
+  <meta name="description" content="Same‑day residential & commercial garage door repair and installation in Springfield, MA and nearby towns. Springs, openers, cables. Licensed & insured. Call (203) 290‑8460." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --brand:#f2a65a; --brand-dark:#d48839; --ink:#111; --bg:#fff; --muted:#6b7280 }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:clamp(16px,2vw,24px)}
+    .btn{display:inline-block;background:var(--brand);color:#000;font-weight:700;border-radius:12px;padding:14px 20px;transition:.2s;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+    .btn:hover{background:var(--brand-dark);transform:translateY(-1px)}
+    .btn.outline{background:transparent;border:2px solid #fff;color:#fff}
+    .btn.outline:hover{background:#fff;color:#000}
+    header{border-bottom:1px solid #eee;background:#fff}
+    header .bar{display:flex;align-items:center;gap:16px;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand .logo{display:flex;align-items:center;justify-content:center;width:auto;height:auto}
+    .contact-inline{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+    .contact-inline a{padding:10px 14px;border-radius:10px;background:#111;color:#fff;font-weight:700;white-space:nowrap}
+    .contact-inline .ghost{background:#f6f6f6;color:#111;font-weight:600}
+    .hero{background:linear-gradient( to right, rgba(0,0,0,.58), rgba(0,0,0,.35) ), url('https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center;color:#fff}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+    .eyebrow{display:inline-flex;gap:10px;align-items:center;margin-bottom:10px}
+    .chip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:6px 10px;border-radius:999px;font-size:12px}
+    .hero h1{font-size:clamp(28px,4.6vw,52px);line-height:1.05;margin:4px 0 10px}
+    .hero p{font-size:clamp(15px,1.6vw,18px);opacity:.95;max-width:720px}
+    .card{background:#fff;color:#111;border-radius:16px;padding:20px;box-shadow:0 12px 32px rgba(0,0,0,.18)}
+    form{display:grid;gap:12px}
+    label{font-size:12px;font-weight:600;color:#374151}
+    input,select,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid #e5e7eb;font-size:15px;background:#fff}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}}
+    .section{padding:54px 0}
+    .section h2{font-size:clamp(24px,3vw,34px);margin:0 0 14px}
+    .muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .service{background:#fafafa;border:1px solid #eee;border-radius:16px;padding:18px}
+    .service h3{margin:8px 0 6px;font-size:18px}
+    .service p{margin:0;color:#4b5563;font-size:14px}
+    @media (max-width:1024px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:560px){.grid{grid-template-columns:1fr}}
+    .bullets{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:10px}
+    .bullet{border:1px solid #eee;border-radius:14px;padding:14px;background:#fff}
+    .bullet b{display:block;margin-bottom:6px}
+    @media (max-width:900px){.bullets{grid-template-columns:repeat(2,1fr)}}
+    .testis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .testi{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;box-shadow:0 8px 20px rgba(0,0,0,.04)}
+    .stars{color:#f59e0b;margin-bottom:8px}
+    @media (max-width:900px){.testis{grid-template-columns:1fr}}
+    .cta{background:#111;color:#fff;border-radius:18px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    footer{padding:28px 0;color:#6b7280}
+    .small{font-size:12px;color:#6b7280}
+  
+    /* MOBILE ENHANCEMENTS */
+    :root { -webkit-text-size-adjust: 100%; }
+    a, button { -webkit-tap-highlight-color: rgba(0,0,0,0.1); }
+    input, select, textarea { font-size: 16px; } /* prevent iOS zoom */
+    @media (max-width:768px){
+      body{ padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+      .mobile-call{ padding-bottom: calc(16px + env(safe-area-inset-bottom)); }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *{ animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+        
+
+/* STICKY CALL BAR (force add) */
+@media (max-width:768px){
+  .mobile-call{
+    position:fixed;
+    bottom:0; left:0; right:0;
+    background:var(--brand);
+    color:#000; text-align:center;
+    padding:16px;
+    font-size:18px; font-weight:700;
+    z-index:999;
+    box-shadow:0 -2px 8px rgba(0,0,0,.15);
+  }
+  body{ padding-bottom: calc(70px + env(safe-area-inset-bottom)); }
+}
+
+
+/* --- Fixes: mobile-call visibility + hero mobile padding & safe text wrap --- */
+.mobile-call { display: none; }  /* hidden by default (desktop) */
+@media (max-width:768px){
+  .mobile-call { display: block; }
+  .hero{ padding-top: 84px !important; } /* prevent header overlap on mobile */
+}
+.hero h1{ word-wrap: break-word; overflow-wrap: anywhere; hyphens: auto; }
+
+
+/* Header/Contact responsive rules */
+@media (max-width:900px){
+  .contact-inline{justify-content:flex-start}
+}
+@media (max-width:640px){
+  .contact-inline a{padding:10px 12px}
+  .hero{padding-top: 20px !important;}
+}
+/* Ensure hero title never clips and wraps nicely */
+.hero h1{overflow-wrap:anywhere;word-break:break-word;line-height:1.08}
+
+
+/* Show sticky call bar only on small screens */
+.mobile-call{display:none}
+@media (max-width:768px){ .mobile-call{display:block} }
+
+</style>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#f2a65a">
+
+</head>
+<body>
+  <header>
+    <div class="container bar">
+      <div class="brand">
+        <div class="logo"><img src="1.png" alt="Garage Door Professionals Logo" style="height:42px; width:auto; display:block" loading="lazy" decoding="async"></div>
+        <div>
+          <div style="font-size:14px;color:#6b7280;font-weight:700;letter-spacing:.02em">GARAGE DOOR PROFESSIONALS</div>
+          <div style="font-weight:800;line-height:1">Repairs • Installations • 24/7</div>
+        </div>
+      </div>
+      <div class="contact-inline">
+        <a class="ghost" href="mailto:magaragedoorpros@gmail.com">magaragedoorpros@gmail.com</a>
+        <a href="tel:+12032908460">📞 (203) 290‑8460</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" style="padding-top:24px">
+    <div class="container wrap" style="padding-top:38px;padding-bottom:42px">
+      <div>
+        <div class="eyebrow">
+          <span class="chip">Professional</span>
+          <span class="chip">Trustworthy</span>
+          <span class="chip">Same‑Day Service</span>
+        </div>
+        <h1>24/7 Garage Door Repair & Installation<br/><span style="color:var(--brand)">Springfield, MA & Surrounding Area</span></h1>
+        <p>Expert residential & commercial service across Springfield, Chicopee, West Springfield & Longmeadow. Broken springs, openers, cables — fixed fast by licensed & insured techs.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn" href="tel:+12032908460" aria-label="Call Garage Door Professionals at (203) 290-8460">📞 Call Now (203) 290‑8460</a>
+          <a class="btn outline" href="#quote">Request Callback</a>
+        </div>
+      </div>
+
+      <div class="card" id="quote" aria-label="Get a free estimate form">
+        <h3 style="margin:0 0 6px">Get a Free Estimate</h3>
+        <p class="muted" style="margin:0 0 12px">We’ll call you back within minutes during business hours.</p>
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" placeholder="Full name" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" inputmode="tel" placeholder="(###) ###‑####" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="city">City</label>
+              <select id="city" name="city">
+                <option>Springfield, MA</option>
+                <option>Chicopee, MA</option>
+                <option>West Springfield, MA</option>
+                <option>Longmeadow, MA</option>
+                <option>East Longmeadow, MA</option>
+                <option>Holyoke, MA
+              </select>
+            </div>
+            <div>
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>Repair – Broken Spring</option>
+                <option>Repair – Opener/Motor</option>
+                <option>Repair – Cable/Roller/Track</option>
+                <option>Door Off Track / Stuck</option>
+                <option>New Door Installation</option>
+                <option>Commercial Service</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="msg">Notes (optional)</label>
+            <textarea id="msg" name="message" rows="3" placeholder="Tell us what’s going on…"></textarea>
+          </div>
+          <button class="btn" type="submit">📩 Request Callback</button>
+          <div id="formFeedback" class="small" aria-live="polite" style="margin-top:6px"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Services We Provide</h2>
+      <p class="muted">Residential & commercial. Same‑day and emergency available.</p>
+      <div class="grid" style="margin-top:14px">
+        <div class="service"><h3>Repairs</h3><p>Springs, cables, rollers, hinges, sensors, tracks, weather‑seal.</p></div>
+        <div class="service"><h3>Openers & Motors</h3><p>LiftMaster, Chamberlain, Genie – repair & replacement, keypads & remotes.</p></div>
+        <div class="service"><h3>New Doors</h3><p>Installation & replacement. Steel, wood‑look, insulated, custom sizes.</p></div>
+        <div class="service"><h3>Commercial</h3><p>Sectional & rolling doors for warehouses, shops, and industrial sites.</p></div>
+      </div>
+
+      <div class="bullets">
+        <div class="bullet"><b>Licensed & Insured</b><span class="muted">Professional technicians you can trust.</span></div>
+        <div class="bullet"><b>Transparent Pricing</b><span class="muted">Clear estimates before any work begins.</span></div>
+        <div class="bullet"><b>Same‑Day Service</b><span class="muted">We arrive fast and fix it right.</span></div>
+        <div class="bullet"><b>5‑Star Support</b><span class="muted">Real people, real accountability.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fafafa;border-top:1px solid #eee;border-bottom:1px solid #eee">
+    <div class="container">
+      <h2>What Our Customers Say</h2>
+      <div class="testis" style="margin-top:14px">
+        <div class="testi"><div class="stars">★★★★★</div><p>“Called in the morning, spring replaced by noon. Friendly, fair pricing, and super quick!”</p><div class="small">— M.G., Springfield</div></div>
+        <div class="testi"><div class="stars">★★★★★</div><p>“Our opener died. They installed a new LiftMaster same day. Night‑and‑day difference!”</p><div class="small">— T.R., Chicopee</div></div>
+        <div class="testi"><div class="stars">★★★★★</div><p>“Rolldown at our shop was stuck. Tech arrived fast and got us open in 40 minutes.”</p><div class="small">— A.K., Longmeadow</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container cta">
+      <div>
+        <h2 style="margin:0">Your Garage Door Fixed <span style="color:var(--brand)">Today</span></h2>
+        <p class="muted" style="margin:6px 0 0">Call now or request a quick callback. We serve Springfield, MA & nearby towns.</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="tel:+12032908460" aria-label="Call Garage Door Professionals at (203) 290-8460">📞 Call (203) 290‑8460</a>
+        <a class="btn outline" href="#quote">Request Callback</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div class="small">© <span id="yr"></span> Garage Door Professionals. All rights reserved.</div>
+      <div class="small">Hours: Mon–Sun 8:00 AM – 9:00 PM • Serving Springfield, Chicopee, West Springfield, Longmeadow & Holyoke</div>
+    </div>
+  <div class="small">Learn more at <a href="https://garage-door-pros-ma.com" target="_blank">garage-door-pros-ma.com</a></div>
+</footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    function handleSubmit(e){
+      e.preventDefault();
+      document.getElementById('formFeedback').textContent='Thanks! We\'ll call you shortly.';
+      if(/Mobi|Android/i.test(navigator.userAgent)){ setTimeout(()=>{ location.href='tel:+12032908460' }, 400); }
+      // place to fire a conversion event
+      // gtag('event','generate_lead',{ 'send_to':'AW-XXXXXXX/xxxxxx' });
+    }
+  </script>
+
+  <div class="mobile-call" role="region" aria-label="Quick call bar">
+    <a href="tel:+12032908460" aria-label="Call Garage Door Professionals at (203) 290-8460">📞 Call Now (203) 290‑8460</a>
+  </div>
+
+
+  <div class="mobile-call" role="region" aria-label="Quick call bar">
+    <a href="tel:+12032908460" aria-label="Call Garage Door Professionals at (203) 290-8460">📞 Call Now (203) 290‑8460</a>
+  </div>
+
+</body>
+</html>
